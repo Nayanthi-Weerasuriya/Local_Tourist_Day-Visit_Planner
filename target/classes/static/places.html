@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Places | Local Tourist Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="site-shell">
+    <header class="site-header">
+        <a class="brand" href="/index.html">
+            <img class="brand-logo" src="/images/default-place.png" alt="Logo">
+            <span>
+                <strong>Local Tourist Planner</strong>
+                <small>Rajagiriya Day Visits</small>
+            </span>
+        </a>
+        <nav class="site-nav">
+            <a href="/index.html">Home</a>
+            <a href="/places.html" class="active">Places</a>
+            <a href="/planner.html">Planner</a>
+        </nav>
+    </header>
+
+    <main class="page-section">
+        <section class="page-hero compact">
+            <p class="eyebrow">Places listing</p>
+            <h1>Discover attractions around Rajagiriya</h1>
+            <p>Filter by category, search by name, and open each place for full details, tips, and map view.</p>
+        </section>
+
+        <section class="toolbar">
+            <div class="toolbar-group">
+                <label>
+                    Search
+                    <input id="search-input" type="search" placeholder="Search places by name or area">
+                </label>
+                <label>
+                    Category
+                    <select id="category-filter">
+                        <option value="All">All categories</option>
+                        <option value="Religious">Religious</option>
+                        <option value="Nature">Nature</option>
+                        <option value="Heritage">Heritage</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="Leisure">Leisure</option>
+                    </select>
+                </label>
+            </div>
+            <div class="toolbar-actions">
+                <button id="apply-filter-btn" class="button primary">Apply filters</button>
+                <button id="clear-filter-btn" class="button secondary" type="button">Clear</button>
+            </div>
+        </section>
+
+        <section id="results-summary" class="result-summary"></section>
+        <section id="places-grid" class="card-grid"></section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Local Tourist Planner. All rights reserved.</p>
+    </footer>
+</div>
+
+<div id="toast-container" class="toast-container"></div>
+<script type="module" src="/js/places.js"></script>
+</body>
+</html>

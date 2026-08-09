@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Tourist Day-Visit Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="site-shell">
+    <header class="site-header">
+        <a class="brand" href="/index.html">
+            <img class="brand-logo" src="/images/default-place.png" alt="Logo">
+            <span>
+                <strong>Local Tourist Planner</strong>
+                <small>Rajagiriya Day Visits</small>
+            </span>
+        </a>
+        <nav class="site-nav">
+            <a href="/index.html" class="active">Home</a>
+            <a href="/places.html">Places</a>
+            <a href="/planner.html">Planner</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Explore within 25 km of Rajagiriya</p>
+                <h1>Plan a simple, scenic one-day trip around Rajagiriya and nearby Colombo highlights.</h1>
+                <p class="hero-text">
+                    Browse heritage landmarks, religious sites, urban parks, leisure spots, and cultural attractions.
+                    Filter places, view details with maps, and build a clear day-visit route in minutes.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="/places.html">Explore Places</a>
+                    <a class="button secondary" href="/planner.html">Open Planner</a>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <div class="glass-card">
+                    <h2>Find your next stop</h2>
+                    <form id="hero-search-form" class="stack-form">
+                        <label>
+                            Search by place name
+                            <input type="text" id="hero-keyword" placeholder="Try Diyatha Uyana or Museum">
+                        </label>
+                        <label>
+                            Filter by category
+                            <select id="hero-category">
+                                <option value="All">All categories</option>
+                                <option value="Religious">Religious</option>
+                                <option value="Nature">Nature</option>
+                                <option value="Heritage">Heritage</option>
+                                <option value="Cultural">Cultural</option>
+                                <option value="Leisure">Leisure</option>
+                            </select>
+                        </label>
+                        <button class="button primary full-width" type="submit">Search places</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-strip">
+            <article>
+                <h3>Tourists</h3>
+                <p>Get quick place details, travel tips, opening times, and map locations.</p>
+            </article>
+            <article>
+                <h3>Local residents</h3>
+                <p>Build an easy local day-out plan without extra booking or reservation steps.</p>
+            </article>
+            <article>
+                <h3>Simple planning</h3>
+                <p>Select multiple places, reorder them, and generate a practical visit sequence.</p>
+            </article>
+        </section>
+
+        <section class="section-heading">
+            <div>
+                <p class="eyebrow">Featured attractions</p>
+                <h2>Popular day-visit options near Rajagiriya</h2>
+            </div>
+            <a class="text-link" href="/places.html">View all places</a>
+        </section>
+
+        <section id="featured-places" class="card-grid"></section>
+
+        <section class="split-banner">
+            <div>
+                <p class="eyebrow">Plan your day</p>
+                <h2>Keep your itinerary simple and easy to demonstrate.</h2>
+                <p>
+                    This system focuses on sightseeing information and one-day planning only. No booking,
+                    payment, hotel, or transport reservation features are included.
+                </p>
+            </div>
+            <a class="button primary" href="/planner.html">Start a Day Plan</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Local Tourist Planner. All rights reserved.</p>
+    </footer>
+</div>
+
+<div id="toast-container" class="toast-container"></div>
+<script type="module" src="/js/home.js"></script>
+</body>
+</html>

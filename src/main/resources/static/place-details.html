@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details | Local Tourist Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="site-shell">
+    <header class="site-header">
+        <a class="brand" href="/index.html">
+            <img class="brand-logo" src="/images/default-place.png" alt="Logo">
+            <span>
+                <strong>Local Tourist Planner</strong>
+                <small>Rajagiriya Day Visits</small>
+            </span>
+        </a>
+        <nav class="site-nav">
+            <a href="/index.html">Home</a>
+            <a href="/places.html">Places</a>
+            <a href="/planner.html">Planner</a>
+        </nav>
+    </header>
+
+    <main class="page-section">
+        <div id="place-detail-root" class="detail-layout"></div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Local Tourist Planner. All rights reserved.</p>
+    </footer>
+</div>
+
+<div id="toast-container" class="toast-container"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script type="module" src="/js/place-details.js"></script>
+</body>
+</html>

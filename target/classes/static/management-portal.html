@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Local Tourist Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="site-shell centered-shell">
+    <main class="login-layout">
+        <section class="login-intro">
+            <p class="eyebrow">Administrator access</p>
+            <h1>Manage tourism place information securely.</h1>
+            <p>
+                Sign in to add, edit, delete, and manage Rajagiriya-area places for the tourism information system.
+            </p>
+            <div class="credential-note">
+                <strong>Demo admin</strong>
+                <p>Username: <code>admin</code></p>
+                <p>Password: <code>Admin@123</code></p>
+            </div>
+        </section>
+
+        <section class="login-card">
+            <h2>Admin Login</h2>
+            <form id="login-form" class="stack-form">
+                <label>
+                    Username
+                    <input id="username" type="text" name="username" autocomplete="username" required>
+                </label>
+                <label>
+                    Password
+                    <input id="password" type="password" name="password" autocomplete="current-password" required>
+                </label>
+                <button id="login-submit" class="button primary full-width" type="submit">Log in</button>
+            </form>
+            <p class="helper-text">This page uses secure session-based authentication for administrator-only APIs.</p>
+            <a class="text-link" href="/index.html">Back to public site</a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2026 Local Tourist Planner. All rights reserved.</p>
+    </footer>
+</div>
+
+<div id="toast-container" class="toast-container"></div>
+<script type="module" src="/js/admin-login.js"></script>
+</body>
+</html>

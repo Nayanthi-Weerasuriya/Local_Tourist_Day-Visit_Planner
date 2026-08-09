@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Day Planner | Local Tourist Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+<div class="site-shell">
+    <header class="site-header">
+        <a class="brand" href="/index.html">
+            <img class="brand-logo" src="/images/default-place.png" alt="Logo">
+            <span>
+                <strong>Local Tourist Planner</strong>
+                <small>Rajagiriya Day Visits</small>
+            </span>
+        </a>
+        <nav class="site-nav">
+            <a href="/index.html">Home</a>
+            <a href="/places.html">Places</a>
+            <a href="/planner.html" class="active">Planner</a>
+        </nav>
+    </header>
+
+    <main class="page-section">
+        <section class="page-hero compact">
+            <p class="eyebrow">One-day visit planner</p>
+            <h1>Create a practical route for your selected places</h1>
+            <p>Reorder your itinerary, remove stops, or generate a simple suggested order based on distance.</p>
+        </section>
+
+        <section class="planner-shell">
+            <aside class="planner-sidebar">
+                <div class="summary-card">
+                    <p class="eyebrow">Planner summary</p>
+                    <h2 id="planner-code">No active plan</h2>
+                    <div class="stat-list">
+                        <div>
+                            <span>Total places</span>
+                            <strong id="planner-count">0</strong>
+                        </div>
+                        <div>
+                            <span>Estimated route</span>
+                            <strong id="planner-route-text">No stops yet</strong>
+                        </div>
+                    </div>
+                    <div class="action-group">
+                        <button id="generate-plan-btn" class="button primary full-width" type="button">Generate suggested plan</button>
+                        <button id="download-pdf-btn" class="button secondary full-width" type="button">Download PDF</button>
+                        <a class="button secondary full-width" href="/places.html">Add more places</a>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <p class="eyebrow">Stop summary</p>
+                    <div id="planner-stops" class="stop-summary"></div>
+                </div>
+            </aside>
+
+            <section>
+                <div id="planner-list" class="planner-list"></div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Local Tourist Planner. All rights reserved.</p>
+    </footer>
+</div>
+
+<div id="toast-container" class="toast-container"></div>
+<script type="module" src="/js/planner.js"></script>
+</body>
+</html>
